@@ -370,9 +370,9 @@
 # print(initials("Operating system")) # Should be: OS
 # print(initials("asdf asdfja;g fd gjfkdldg;"))
 
-def differ(string):
-  for i  len(string)
+# def differ(string):
+#   for i  len(string)
 
 
 
-print(differ("abc"))
+# print(differ("abc"))
