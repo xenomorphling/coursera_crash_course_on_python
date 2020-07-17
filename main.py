@@ -344,7 +344,7 @@
 # # 	    print("Possible option:" + vote)
 
 
-# # votes(['yes', 'no', 'maybe'])
+# # votes(['yes', 'no', 'maybe'])l
 
 
 
@@ -376,3 +376,32 @@
 
 
 # print(differ("abc"))
+
+
+# animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+# chars = 0
+# for animal in animals:
+#   chars += len(animal)
+# print("Total characters: {}, Average length: {}".format(chars, chars/len(animals)))
+
+# winners = ["Ashley", "Dylan", "Reese"]
+# for index, person in enumerate(winners):
+#   print("{} - {}".format(index + 1, person))
+
+
+
+# def skip_elements(elements):
+#   result = tuple()
+#   for index, element in enumerate(elements):
+#     if index % 2 == 0:
+#       print(element)
+#       result += element
+#   return result
+
+#   # for index, element in enumerate(elements):
+#   #   if index % 2 == 0:
+#   #     result += element
+#   # print(result)
+
+# print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+# print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
