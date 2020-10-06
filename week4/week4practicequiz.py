@@ -25,13 +25,44 @@
 # print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
 
 
-def group_list(group, users):
-  members = str(users).replace("[","")
-  members = members.replace("]","")
-  members = members.replace("'","")
-  
-  return ((group) + ": " + members)
+# def group_list(group, users):
+#   members = str(users).replace("[","")
+#   members = members.replace("]","")
+#   members = members.replace("'","")
+#
+#   return ((group) + ": " + members)
+#
+# print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
+# print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
+# print(group_list("Users", "")) # Should be "Users:"
 
-print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
-print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
-print(group_list("Users", "")) # Should be "Users:"
+
+
+# def full_emails(people):
+#   result = []
+#   for email, name in people:
+#     result.append("{} <{}>".format(name, email))
+#   return result
+
+# print(full_emails([("alex@example.com", "Alex Diego"), ("shay@example.com", "Shay Brandt")]))
+
+
+animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+chars = 0
+for animal in animals:
+  chars += len(animal)
+ print("Total characters: {}, Average langth: {}".format(chars, chars/len(animals)))
+
+# winners = ["Ashley", "Dylan", "Reese"]
+# for index, person in enumerate(winners):
+#   print("{} - {}".format(index + 1, person))
+
+# def skip_elements(elements):
+#   result = ([])
+#   for index, element in enumerate(elements):
+#     if index % 2 == 0:
+#       result += element
+#   print(result)
+
+# print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+# print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
