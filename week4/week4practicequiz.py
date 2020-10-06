@@ -43,15 +43,15 @@
 #   for email, name in people:
 #     result.append("{} <{}>".format(name, email))
 #   return result
-
 # print(full_emails([("alex@example.com", "Alex Diego"), ("shay@example.com", "Shay Brandt")]))
 
 
-animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
-chars = 0
-for animal in animals:
-  chars += len(animal)
- print("Total characters: {}, Average langth: {}".format(chars, chars/len(animals)))
+# animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+# chars = 0
+# for animal in animals:
+#   print(len(animal))
+#   chars += len(animal)
+# print("Total characters: {}, Average langth: {}".format(chars, chars/len(animals)))
 
 # winners = ["Ashley", "Dylan", "Reese"]
 # for index, person in enumerate(winners):
@@ -64,5 +64,32 @@ for animal in animals:
 #       result += element
 #   print(result)
 
-# print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
-# print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+# # print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+# print(skip_elements(["Orange", "Pineapple", "Strawberry", "Kiwi", "Peach"])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+# multiples = []
+# for x in range(1, 11):
+#   multiples.append(x*7)
+# print(multiples)
+
+# multiples = [x*7 for x in range(1, 11)]
+# print(multiples)
+
+# languages = ["Python", "Perl", "Ruby", "Go", "Java", "C"]
+# lengths = [len(language) for language in languages]
+# print(lengths)
+
+# z = [x for x in range(0, 101) if x % 3 == 0]
+# print(z)
+
+# def odd_numbers(n):
+#   return [x for x in range(0, n+1) if x % 2 == 1]
+
+# print(odd_numbers(5))  # Should print [1, 3, 5]
+# print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
+# print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
+# print(odd_numbers(1))  # Should print [1]
+# print(odd_numbers(-1)) # Should print []
+
+# Quiz
+
