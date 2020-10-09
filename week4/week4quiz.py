@@ -13,10 +13,7 @@ filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.o
 # print(newfilenames) 
 # # Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
  
-newfilename = []
-print(type(newfilename))
+newfilename = ([])
 for index, filename in enumerate(filenames):
-  print(index, filename)
-  filename = filename.replace(".hpp", ".h")
-  print(filename)
-  
+  newfilename == newfilename.append(filename.replace(".hpp", ".h"))
+print(newfilename)
