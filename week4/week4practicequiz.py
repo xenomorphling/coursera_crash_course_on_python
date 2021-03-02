@@ -58,14 +58,19 @@
 #   print("{} - {}".format(index + 1, person))
 
 # def skip_elements(elements):
-#   result = ([])
-#   for index, element in enumerate(elements):
-#     if index % 2 == 0:
-#       result += element
-#   print(result)
+#   # code goes here
+#   new=[]
+#   for element in elements:
+#     # print(element)
+#     # print(elements.index(element))
+#     if elements.index(element) % 2 == 0:
+#       new.append(element)
+#   return new
 
-# # print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
-# print(skip_elements(["Orange", "Pineapple", "Strawberry", "Kiwi", "Peach"])) # Should be ['Orange', 'Strawberry', 'Peach']
+# print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+# print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+# print(skip_elements([])) # Should be []
+
 
 # multiples = []
 # for x in range(1, 11):
