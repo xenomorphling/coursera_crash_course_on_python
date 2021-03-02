@@ -171,7 +171,7 @@
 # print(count_letters("whos your daddy"))
      
 
-# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
-# for cloth in wardrobe.keys():
-#     for color in wardrobe[cloth]:
-#         print("{} {}".format(color, cloth))
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for cloth in wardrobe.keys():
+    for color in wardrobe[cloth]:
+        print("{} {}".format(color, cloth))

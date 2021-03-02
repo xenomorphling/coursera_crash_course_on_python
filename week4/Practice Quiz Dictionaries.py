@@ -18,24 +18,28 @@ The groups_per_user function receives a dictionary, which contains group names w
 def groups_per_user(group_dictionary):
     user_groups = {}
     # Go through group_dictionary
-    for user in group_dictionary.values():
-        # Now go through the users in the group
-        print(user)
-        for group, user in group_dictionary.items():
-            # Now add the group to the the list of
-            # groups for this user, creating the entry
-            # in the dictionary if necessary
-            print(user, group)
+    for group in group_dictionary.keys():
+        # print(users)
+        for user in group_dictionary[group]:
+            # print(user, group)
+            if user in user_groups.keys():
+                print(user, group)
+                user_groups.append(user, group)
+        # for group in group_dictionary.keys():
+        #     print(group)
     return(user_groups)
 
-print(groups_per_user({"local": ["admin", "userA"],
-        "public":  ["admin", "userB"],
-        "administrator": ["admin"] }))
+print(groups_per_user({ "local": ["admin", "userA"],
+                        "public":  ["admin", "userB"],
+                        "administrator": ["admin"] }))
 
 
-
-dictionary = {'george': 16, 'amber': 19}
-search_age = input("Provide age")
-for name, age in dictionary.items():  # for name, age in dictionary.iteritems():  (for Python 2.x)
-    if age == search_age:
-        print(name)
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for cloth in wardrobe.keys():
+    for color in wardrobe[cloth]:
+        print("{} {}".format(color, cloth))
+# dictionary = {'george': 16, 'amber': 19}
+# search_age = input("Provide age")
+# for name, age in dictionary.items():  # for name, age in dictionary.iteritems():  (for Python 2.x)
+#     if age == search_age:
+#         print(name)
