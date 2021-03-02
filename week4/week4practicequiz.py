@@ -133,3 +133,40 @@
 #   return [x*2 for x in range(0, n+1)]
 
 # print(multiple(3))
+
+
+# file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+# for extension in file_counts:
+#     print(extension) 
+
+# for ext, amount in file_counts.items():
+#     print("There are {} files with the .{} extenstion".format(amount, ext))
+
+# print(file_counts.keys())
+
+# print(file_counts.values())
+
+# for value in file_counts.values():
+#     print(value)
+
+
+# cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+# for animal, item in cool_beasts.items():
+#     print("{} have {}".format(animal, item))
+
+# def count_letters(text):
+#     result = {}
+#     for letter in text:
+#         if letter not in result:
+#             result[letter] = 0
+#         result[letter] += 1
+#     return result
+
+# print(count_letters("aaaaa"))
+# print(count_letters("whos your daddy"))
+     
+
+# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+# for cloth in wardrobe.keys():
+#     for color in wardrobe[cloth]:
+#         print("{} {}".format(color, cloth))
