@@ -25,16 +25,7 @@
 # print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
 
 
-# def group_list(group, users):
-#   members = str(users).replace("[","")
-#   members = members.replace("]","")
-#   members = members.replace("'","")
-#
-#   return ((group) + ": " + members)
-#
-# print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
-# print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
-# print(group_list("Users", "")) # Should be "Users:"
+# 
 
 
 
@@ -97,4 +88,90 @@
 # print(odd_numbers(-1)) # Should print []
 
 # Quiz
+# animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+# chars = 0
+# for animal in animals:
+#   chars += len(animal)
 
+# print("Total characters: {}, Average length: {}".format(chars, chars/len(animals)))
+
+# winners = ["Ashley", "Dylan", "Reese"]
+# for index, person in enumerate(winners):
+#   print("{} - {}".format(index + 1, person))
+
+
+# def skip_elements(elements):
+#   # result = ([])
+# for index, element in enumerate(elements):
+#   if index % 2 == 0:
+#     result += element
+# print(result)
+
+# print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+# print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+
+# multiples = []
+# for x in range(1,11):
+#   multiples.append(x*7)
+# print(multiples)
+
+# languages = ["Python", "Perl", "Ruby", "Go", "Java", "C"]
+# lengths = [len(language) for language in languages]
+# print(lengths)
+
+# z = [x for x in range(0,300) if x % 3 == 0]
+# print(z)
+
+
+# def odd_numbers(n):
+#   return [x for x in range(0, n+1) if x % 2 == 1]
+
+# print(odd_numbers(5))  # Should print [1, 3, 5]
+# print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
+# print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
+# print(odd_numbers(1))  # Should print [1]
+# print(odd_numbers(-1)) # Should print []
+
+
+# def multiple(n):
+#   return [x*2 for x in range(0, n+1)]
+
+# print(multiple(3))
+
+
+# file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+# for extension in file_counts:
+#     print(extension) 
+
+# for ext, amount in file_counts.items():
+#     print("There are {} files with the .{} extenstion".format(amount, ext))
+
+# print(file_counts.keys())
+
+# print(file_counts.values())
+
+# for value in file_counts.values():
+#     print(value)
+
+
+# cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+# for animal, item in cool_beasts.items():
+#     print("{} have {}".format(animal, item))
+
+# def count_letters(text):
+#     result = {}
+#     for letter in text:
+#         if letter not in result:
+#             result[letter] = 0
+#         result[letter] += 1
+#     return result
+
+# print(count_letters("aaaaa"))
+# print(count_letters("whos your daddy"))
+     
+
+# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+# for cloth in wardrobe.keys():
+#     for color in wardrobe[cloth]:
+#         print("{} {}".format(color, cloth))
