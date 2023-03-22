@@ -171,7 +171,47 @@
 # print(count_letters("whos your daddy"))
      
 
-wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
-for cloth in wardrobe.keys():
-    for color in wardrobe[cloth]:
-        print("{} {}".format(color, cloth))
+# wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+# for cloth in wardrobe.keys():
+#     for color in wardrobe[cloth]:
+#         print("{} {}".format(color, cloth))
+
+
+"""
+Fill in the blank using any of the methods you’ve learned thus far, like a for loop or a list comprehension. With the given list of "filenames", this code should rename all files with the extension .hpp to the extension .h. The function should then generate a new list called "newfilenames" that contains the file names with the new extension.
+"""
+
+# filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# # Generate newfilenames as a list containing the new filenames
+# # using as many lines of code as your chosen method requires.
+# newlist = ([])
+# for index, name in enumerate(filenames):
+#     newlist.append(name.replace(".hpp", ".h"))
+# print(newlist)
+
+# Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
+
+"""
+Fill in the blanks to complete the “guest_list” function. The guest_list function reads in a list of tuples with the name, age, and profession of each party guest, and prints the sentence "Guest is _ years old and works as __." for each guest. For example, guest_list(('Ken', 30, "a Chef") should print: “Ken is 30 years old and works as a Chef.” 
+"""
+
+# def biography_list(people):
+#     # Iterate over each "person" in the given "people" list of tuples. 
+#     for person in people:
+#         # Separate the 3 items in each tuple into 3 variables:
+#         # "name", "age", and "profession"   
+#         name, age, profession = person
+#         # Format the required sentence and place the 3 variables 
+#         # in the correct placeholders using the .format() method.
+#         print("{} is {} years old and works as {}".format(name, age, profession))
+
+
+# # Call to the function:
+# biography_list([('Ira', 30, 'Chef'), ('Raj', 35, 'Lawyer'), ('Maria', 25, 'Engineer')])
+
+# Click Run to submit code
+
+# Output should match:
+# Ken is 30 years old and works as a Chef
+# Pat is 35 years old and works as a Lawyer
+# Amanda is 25 years old and works as an Engineer
